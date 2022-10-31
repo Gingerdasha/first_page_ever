@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siberian_Husky 🐺</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #27296d;
+        font-size: 36px;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 24px;
+        color: #5e63b6;
+        border: 1px solid #5e63b6;
+        padding: 10px;
+        border-radius: 6px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #f5c7f7;
+        color: #27296d;
+        font-size: 20px;
+        padding: 15px 28px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .container {
+        margin: 0 auto;
+        padding: 20px 40px;
+        background: linear-gradient(
+          109.6deg,
+          rgb(255, 221, 225) 11.2%,
+          rgb(255, 255, 255) 92.2%
+        );
+        border-radius: 12px;
+        max-width: 600px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .breed {
+        color: #27296d;
+        font-weight: bolder;
+      }
+      .learn-more {
+        padding-top: 10px;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        🐺
+        <br />
+        What is Husky
+      </h1>
+      <h2>Husky Farm Nature Adventures</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/874/original/woman-hugging-husky.jpeg?1661718278"
+        alt="Husky"
+      />
+      <p>
+        The <span class="breed">Siberian Husky</span> is a medium-sized working
+        sled dog breed. The breed belongs to the Spitz genetic family. It is
+        recognizable by its thickly furred double coat, erect triangular ears,
+        and distinctive markings, and is smaller than the similar-looking
+        <span class="breed">Alaskan Malamute</span>.
+        <span class="breed">Siberian Huskies</span> originated in Northeast Asia
+        where they are bred by the Chukchi people of Siberia for sled pulling,
+        and companionship. It is an active, energetic, resilient breed, whose
+        ancestors lived in the extremely cold and harsh environment of the
+        Siberian Arctic.
+      </p>
+      <p></p>
+      <a
+        href="https://en.wikipedia.org/wiki/Siberian_Husky"
+        target="blank"
+        class="learn-more"
+      >
+        📚 Learn more on Wikipedia
+      </a>
+      <button class="visit-button">🐶 Visit Husky farm</button>
+      <p class="footer">
+        This page was built by
+        <a href="https://www.facebook.com/dasha.polischuk" target="_blank">
+          Daria P.
+        </a>
+      </p>
+    </div>
+    <script>
+      function visit() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let emoji = prompt("What is your favourite animal emoji?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! Will be in touch by email! Kisses from " +
+            emoji
+        );
+      }
+      let visitButton = document.querySelector(".visit-button");
+      visitButton.addEventListener("click", visit);
+    </script>
+  </body>
+</html>
